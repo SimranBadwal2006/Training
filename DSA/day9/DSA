@@ -1,0 +1,45 @@
+/*depends on - 1. input(0), output, definition(all steps are clear and understanding),finiteness(fixed number of steps), // effectiveness(work on all platforms)
+//operations - searching, insertion, deletetion, updation
+//Notations - big O(O(_)worst case), omega(best case), theta(average case)
+.......................................................TIME COMPLEXITY....................................................................
+
+/*for(int i = 1; i<=n; i=i*i){
+cout<<"Hello";
+} Time complexity == 1
+
+/*for(int i = 1; i<=n; i+=2){
+cout<<"Hello";
+} Time complexity == O(n)
+
+/*for(int i = 1; i<=n; i++){
+for(int j = 1; j<=i;nj++){
+cout<<"Hello";
+}
+cout<<"\n";
+} Time complexity == O(n^2)
+
+/*for(int i=n; i>=1; i=i/2){
+cout<<"Hello";
+} Time complexity = (logn)
+
+single loop -> i++ ->O(n)
+            ->2*i ->log(n)
+Two loop -> i++, j++ -> O(n^2)
+Three loop -> i++, j++, k++ -> O(n^3)   
+
+int fibo(int){
+if(n<=1)
+return n;
+return fibo(n-1)+fibo(n-2);
+} Time complexity = O(2^n)
+
+
+.......................................................SPACE COMPLEXITY....................................................................
+constant -> O(1)
+Array ->O(1)
+
+ 
+........................................................TYPES OF DSA.......................................................................
+LINEAR-> Array, Linked list, stack, Queue(undo, redo)
+
+Non-Linear-> Tree, Graph 
