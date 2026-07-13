@@ -100,7 +100,8 @@ void at_begin(){
 node*ptr=new node(num);  //node name is ptr
 if(start==NULL){
     start=ptr;
-}else{
+}
+else{
     ptr->next=start;     //link the new node to start
     start=ptr;           //start points to ptr
 cout<<"Node Inserted!"<<endl;
@@ -160,13 +161,15 @@ void del_begin(){
     if(start==NULL){
 cout<<"List is Empty";
     }
-    else{
+    if(start->next==NULL){
+        delete start;
+        start=NULL;
+        return;
+    }
         node*temp=start;
         start=start->next;
         delete temp;
-    
         cout<<"Node Deleted from beginning.";
-    }
 }
 };
 
